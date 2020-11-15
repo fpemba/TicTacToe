@@ -1,5 +1,7 @@
 package org.wecancodeit;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -12,6 +14,12 @@ public class Main {
 
 
         printGameBoard(gameBoard);
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your placement (1-9: ");
+        int position = scan.nextInt();
+
+        System.out.println(position);
 
     }
 
